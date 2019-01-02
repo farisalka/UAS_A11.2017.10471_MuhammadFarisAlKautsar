@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<link rel="shortcut icon" href="https://palangkaraya.go.id/wp-content/uploads/2015/10/1bb4e13af45cc5c480069da8670508c5.ico_.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<style>
+        body {
+                background-color: antiquewhite;
+				}
+			</style>
+		<script type="text/javascript" src="select.js"></script>
+		<title>Other</title>
+  </head>
+  <body>
+    <div id="content">  
+			<div style="float" align="center">
+					<h2 align="center"><b><font color="red">Nama Daerah Wisata :</font></b></h2>
+					<select id="wisata" size="8" onchange="pilih()">
+							<option value="A">Museum Balanga</option>
+							<option value="B">Taman Wisata Alam Bukit Tangkiling</option>
+							<option value="C">Batu Banama</option>
+							<option value="D">Taman Wisata Fantasi Beach</option>
+							<option value="E">Kum Kum</option>
+							<option value="F">Danau Tahai</option>
+							<option value="G">Arboretum</option>
+							<option value="H">Rumah Betang</option>
+							<option value="I">Sandung</option>
+							<option value="J">Perahu Wisata Susur Sungai</option>
+					</select>
+			</div>
+	
+			<div style="float" align="center">
+					<h2 align="center"><b><font color="red">Wisata Yang Pernah di Kunjungi :</font></b></h2>
+					<select id="pilihan" size="10">
+					</select>
+			</div>
+		</div>
+		<br><br>
+		<div id="waktu" align="center">
+		<script type="text/javascript">
+		function showTime() {
+		    var q = "";
+		    var today = new Date();
+		    var jam = today.getHours();
+		    var menit = today.getMinutes();
+		    var detik = today.getSeconds();
+		    if (jam < 12){
+		        q = "AM";
+		    }else{
+		        q = "PM";
+		    }
+		    if(jam == 0){
+		        jam = 12;
+		    }
+		    if (jam > 12){
+		        jam = jam - 12;
+		    }
+		    jam = checkTime(jam);
+		    menit = checkTime(menit);
+		    menit = checkTime(menit);
+		 document.getElementById('waktu').innerHTML=jam + ":" + menit + ":" + detik + " " + q;
+		    }
+ 
+		function checkTime(i) {
+		    if (i < 10) {
+		        i = "0" + i;
+		    }
+		    return i;
+		}
+		setInterval(showTime, 500);
+		</script>
+		</div>
+ 
+		<br>
+		<div id="kalender" align="center">
+		<script type='text/javascript'>
+			var bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+			var hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+			var date = new Date();
+			var hr = date.getDate();
+			var bln = date.getMonth();
+			var sekarang = date.getDay(),
+			    sekarang = hari[sekarang];
+			var thn = date.getYear();
+			var tahun = (thn < 1000) ? thn + 1900 : thn;
+			document.write(sekarang + ', ' + hr + ' ' + bulan[bln] + ' ' + tahun);
+		</script>
+		</div>
+  </body>
+</html>

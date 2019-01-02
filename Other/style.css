@@ -1,0 +1,220 @@
+/* Untuk style Font */
+h1{font-family: comic sans ms;
+font-size: 20pt;
+text-align: center;
+color: red;
+}
+
+h2{font-family: calibri;
+font-size: 12pt;
+text-align: justify;
+color: black;
+}
+
+p{font-family: arial;
+font-size:12pt
+text-align: justify;
+color: blue;
+font-weight: bold;
+}
+
+
+/* Background */
+img.bg {
+        min-height: 100%;
+        min-width: 1024px;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+ 
+      @media screen and (max-width: 1024px){
+        img.bg {
+          left: 50%;
+          margin-left: -512px; }
+      }
+ 
+      div#content {
+        position: relative;        
+        width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        font-family: helvetica, arial, sans-serif;
+        font-size: 10pt;
+        line-height: 16pt;
+        -moz-box-shadow: #000 4px 4px 10px;
+        -webkit-box-shadow: #000 4px 4px 10px;
+      }
+ 
+      body {       
+        margin: 0;
+        padding: 20px 0 0 0;
+      }
+
+      *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background-image: url('https://apod.nasa.gov/apod/image/1705/Arp273Main_HubblePestana_3079.jpg');
+	font-family: 'Helvetica', arial, sans-serif;
+
+	font-size: 15px;
+}
+
+p{
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+h3{
+	color: red;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #aaa;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: #666;
+}
+
+
+.container{
+	max-width: 1080px;
+	margin: 20px auto;
+	background: #fff;
+	overflow: hidden;
+	padding: 10px;
+	background-image: url('https://s3-us-west-2.amazonaws.com/en-samurai-gamers-images/wp-content/uploads/2018/02/21142822/Arena-of-Valor-Lore-Faction-v1-678x381.png');
+}
+
+
+.header{
+	border: 1px solid #FFA500;
+	padding: 10px;
+	margin: 10px;
+	background: #FFFAFA;
+}
+
+/* Main */
+	.left{
+		width: 250px;
+		border: 1px solid #FFA500;
+		background: #B0E0E6;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+
+	.middle{
+		width: 500px;
+		border: 1px solid #FFA500;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		background: #FFFAFA;
+	}
+		.middle img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.middle a{
+			font-weight: bold;
+		}
+
+	.right{
+		width: 250px;
+		border: 1px solid #FFA500;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		background: #FFFAFA;
+	}
+
+
+	.right ul{
+		list-style-type: none;
+	}
+	.right ul li{
+		display: block;
+	}
+	.right ul li a{
+		display: block;
+		border-bottom: 1px solid #FFA500;
+		margin-bottom: 10px;
+		padding: 10px 5px;
+	}
+	.right ul li a:hover{
+		color: red;
+	}
+
+.footer{
+	clear: both;
+	border: 1px solid #FFA500;
+	padding: 10px;
+	margin: 10px;
+	background: #FFFAFA;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		width: 100%;
+	}
+	.left {
+		width: 25%;
+		background: #B0E0E6;
+	}
+	.middle {
+		width: 68%;
+		float: right;
+	}
+	
+	.right {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+}
+
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+	
+	.header, 
+	.footer{
+		text-align: center;
+	}
+	.left {
+		width: auto;
+		float: none;
+	}
+	
+	.middle {
+		width: auto;
+		float: none;
+	}
+	
+	.right {
+		width: auto;
+		float: none;
+	}
+
+}
+
+
